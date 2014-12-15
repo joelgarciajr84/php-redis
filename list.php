@@ -2,7 +2,7 @@
 
 require "connection.php";
 
-echo "<h1>Languages List</h1>";
+echo "<h1>Redis - List Example - </h1>";
 
 function setList($list, $value) {
 
