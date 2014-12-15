@@ -1,5 +1,5 @@
 <?php
-
+require "connection.php";
 //String Example
 
 $RedisJoel->set("Nome", "Joel Quenede Garcia de Assis");
