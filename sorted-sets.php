@@ -1,23 +1,24 @@
 <?php
+
 require "connection.php";
 
-echo "<h1>Redis - Sets - </h1>";
+echo "<h1>Redis - Sorted Sets - </h1>";
 
-$games = array("GTA5", "BF4", "FARCRY");
+$consoles = array("Xbox One", "PlayStation 4", "Nintendo Wii");
 
-foreach ($games as $game) {
+foreach ($consoles as $console) {
 
-	$RedisJoel->sadd("Games", $game);
+	$RedisJoel->zadd("consoles", 0, $console);
 }
 
-$games = $RedisJoel->smembers("Games");
+$consoleslist = $RedisJoel->ZRANGEBYSCORE("consoles", 0, 1000);
 
-foreach ($games as $output) {
+foreach ($consoleslist as $output) {
 
-	echo $output . "<br/>";
+	echo $output . "<br>";
 }
 echo "<h2>Script Running now: </h2>";
-highlight_file("sets.php");
+highlight_file("sorted-sets.php");
 ?>
 <ul>
 

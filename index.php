@@ -1,15 +1,6 @@
 <?php
-require "connection.php";
-//String Example
+echo "<h1>Redis Examples</h1>";
 
-echo "<h1>Redis -String Example - </h1>";
-
-$RedisJoel->set("Nome", "Joel Quenede Garcia de Assis");
-
-echo "Name: " . $RedisJoel->get("Nome");
-
-echo "<h2>Script Running now: </h2>";
-highlight_file("string.php");
 ?>
 <ul>
 
