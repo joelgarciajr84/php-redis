@@ -1,10 +1,9 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
 
-require "predis-1.0/autoload.php";
-PredisAutoloader::register();
+//String Example
 
-$redis = new PredisClient();
+$RedisJoel->set("Nome", "Joel Quenede Garcia de Assis");
+
+echo "Name: " . $RedisJoel->get("Nome");
 
 ?>
