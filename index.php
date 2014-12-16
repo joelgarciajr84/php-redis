@@ -1,5 +1,5 @@
 <?php
-echo "<h1>Redis Examples</h1>";
+echo "<h1>Redis Simple Examples</h1>";
 
 ?>
 <ul>
