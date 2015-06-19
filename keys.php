@@ -13,8 +13,7 @@ foreach ($listaChaves as $chave) {
 }
 
 echo "<h2>Script Running now: </h2>";
-highlight_file("keys.php");
-?>
+highlight_file("keys.php");?>
 <ul>
   <li><a href="index.php">Index</a></li>
   <li><a href="string.php">Strings</a></li>
