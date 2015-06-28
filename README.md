@@ -1,4 +1,5 @@
 php-redis
 =========
 
-## Just using Redis
+## Just using Redis with php
+
