@@ -12,7 +12,7 @@ function setList($list, $value) {
 
 }
 
-$langs = array("php", "java", "c", "javascript", "python", "ruby");
+$langs = array("php", "java", "c", "javascript", "python", "ruby", "c#");
 
 foreach ($langs as $lang) {
 
